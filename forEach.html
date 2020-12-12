@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const array1 = ['a', 'b', 'c'];
+    //   for(let i=0;i<array1.length;i++)
+    //   {
+    //     console.log(array1[i])
+    //   }
+    // function(arg1,arg2)
+    // {}
+    array1.forEach(element => console.log(element));
+
+    array1.forEach(function (element) {
+        console.log("element1", element)
+    });
+
+    array1.forEach(function (element, index, arr) {
+        console.log("element2", element)
+        console.log("index", index)
+        console.log("arr", arr)
+    });
+//     element2 a
+// forEach.html:29 index 0
+// forEach.html:30 arr (3) ["a", "b", "c"]
+// forEach.html:28 element2 b
+// forEach.html:29 index 1
+// forEach.html:30 arr (3) ["a", "b", "c"]
+// forEach.html:28 element2 c 
+// forEach.html:29 index 2
+// forEach.html:30 arr (3) ["a", "b", "c"]
+
+
+
+
+
+</script>
+
+</html>
