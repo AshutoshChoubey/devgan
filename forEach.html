@@ -29,20 +29,38 @@
         console.log("index", index)
         console.log("arr", arr)
     });
-//     element2 a
-// forEach.html:29 index 0
-// forEach.html:30 arr (3) ["a", "b", "c"]
-// forEach.html:28 element2 b
-// forEach.html:29 index 1
-// forEach.html:30 arr (3) ["a", "b", "c"]
-// forEach.html:28 element2 c 
-// forEach.html:29 index 2
-// forEach.html:30 arr (3) ["a", "b", "c"]
 
+//     1. The returning value
+// The first difference between map() and forEach() is the returning value. The forEach() method returns undefined and map() returns a new array with the transformed elements. Even if they do the same job, the returning value remains different.
+    const myAwesomeArray = [1, 2, 3, 4, 5]
+const foreachTestig=myAwesomeArray.forEach(x => x * x)
+const foreachTestig1=myAwesomeArray.forEach(function(x){
+    return x * x;
+})
+console.log("myAwesomeArray1",foreachTestig1)
+//>>>>>>>>>>>>>return value: undefined
 
+//myAwesomeArray.map(x => x * x)
+const mapTesting=myAwesomeArray.map(function(x){
+    return x * x;
+})
+console.log("mapTesting",mapTesting);
+//>>>>>>>>>>>>>return value: [1, 4, 9, 16, 25]
 
+// 2. Ability to chain other methods
+// The second difference between these array methods is the fact that map() is chainable. This means that you can attach reduce(), sort(), filter() and so on after performing a map() method on an array.
 
+// That's something you can't do with forEach() because, as you might guess, it returns undefined.
 
-</script>
+const myAwesomeArray1 = [1, 2, 3, 4, 5]
+myAwesomeArray1.forEach(x => x * x).reduce((total, value) => total + value)
+//>>>>>>>>>>>>> Uncaught TypeError: Cannot read property 'reduce' of undefined
+myAwesomeArray1.map(x => x * x).reduce((total, value) => total + value)
+//>>>>>>>>>>>>>return value: 55
+
+// As always, the choice between map() and forEach() will depend on your use case. If you plan to change, alternate, or use the data, you should pick map(), because it returns a new array with the transformed data.
+
+// But, if you won't need the returned array, don't use map() - instead use forEach() or even a for loop.
+// // </script>
 
 </html>
