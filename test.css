@@ -1,0 +1,35 @@
+ /* input {
+            color: red;
+            background-color: black;
+        } */
+
+        /* *
+        {
+           font-size: 45px; 
+        } */
+        /* .input-css
+        {
+            color: red; background-color: black; 
+        } */
+        a
+        {
+
+        }
+        /* body > div > form > input:nth-child(2)
+        {
+            color: red;
+            background-color: black;
+        } */
+        #test1
+        {
+            
+        }
+
+        [maxlength="5"]
+        {
+            color: red;
+            background-color: black; 
+        }
+        a{
+            color: blue;
+        }

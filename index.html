@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="selectorId">example</div>
 </body>
 <script>
-  
+    console.log(a);//undefined
+    var a = 2;
+    console.log(a);//2
+    // b(); //undefined,3,undefined,4,undefined,4
+    // function b() {
+    //     console.log(c);//undefined
+    //     var c = 3;
+    //     console.log(c);//3
+    //     d();
+    //     function d() {
+    //         console.log(f);//undefined
+    //         var f = 4;
+    //         console.log(f);//4
+
+    //     }
+    //     d();//undefined,3,undefined,4,undefined,4
+
+    // }
+    // b();
+    console.log(c);//2
+    var c = ()=>{
+        console.log(a);//2  
+    }
+    console.log(c);//2
 </script>
+
 </html>

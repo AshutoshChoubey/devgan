@@ -40,14 +40,21 @@
 
 //Log a message when the page is fully loaded:
 
-window.addEventListener('load', (event) => {
+addEventListener('load', () => {
   console.log('page is fully loaded');
 });
+// Vanilla
+window.document.addEventListener('DOMContentLoaded', function() {
+ //   alert("Document is ready");
+    console.log('Document is ready');
+})
+
 //The same, but using the onload event handler property:
 
 window.onload = (event) => {
   console.log('page is fully loaded');
 };
+
 
 // Vanilla
 document.addEventListener('DOMContentLoaded', function() {
