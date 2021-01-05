@@ -1,46 +1,24 @@
-console.log(a);// undefied
+console.log(a);//undefied
 var a = 1;
-console.log(a); // 1
-b();// c var in b fun , undefined
-// c var in b fun , 1
-// e var in d func   in b fun, undefined
-    //c  var in d func   in b fun, 1
-    // e var in d func in b fun,1
-    
-
-    // e var in d func   in b fun, undefined
-    //c  var in d func   in b fun, 1
-    // e var in d func in b fun,1
+console.log(a); //1
+b()
 function b() {
-    console.log("c var in b fun", c);
+    console.log("c in b",c);//c in b , undefied
     var c = 1;
-    console.log("c var in b fun", c);
-    d(); // e var in d func   in b fun, undefined
-    //c  var in d func   in b fun, 1
-    // e var in d func in b fun,1
-    function d() {
-        console.log("e var in d func  in b fun", e);
-        var e = 1;
-        console.log("c  var in d func   in b fun", c);
-        console.log("e var in d func in b fun", e);
+    console.log("c in b",c); //c in b , 1
+
+    console.log("a in b",a);
+   var a=10;
+    console.log("a in b",a);// a in b , 10 
+
+    function x() {
+        console.log("c in x",c);//undefied
+        console.log("c in x",a);//undefied
+        var c = 1;
+        console.log("c in x",c);//1
     }
-    d()
-
+    x();
 }
-b();
-// c var in b fun , undefined
-// c var in b fun , 1
-// e var in d func   in b fun, undefined
-    //c  var in d func   in b fun, 1
-    // e var in d func in b fun,1
-    
-
-    // e var in d func   in b fun, undefined
-    //c  var in d func   in b fun, 1
-    // e var in d func in b fun,1
-console.log(c);// referrence error not defined
-
-
 
 
 
@@ -67,4 +45,22 @@ console.log(c);// referrence error not defined
 // When the code is executed line-by-line (by JS interpreeter) it can access the variables defined inside Execution Context
 // variable assignment are done in this phase
 // A new Execution Context is created whenever function invocation is there
+
+// function b() {
+//     console.log("c in b",c);//c in b , undefied
+//     var c = 1;
+//     console.log("c in b",c); //c in b , 1
+
+//     console.log("a in b",a);
+//    var a=10;
+//     console.log("a in b",a);// a in b , 10 
+
+//     function x() {
+//         console.log("c in x",c);//undefied
+//         console.log("c in x",a);//undefied
+//         var c = 1;
+//         console.log("c in x",c);//1
+//     }
+//     x();
+// }
 

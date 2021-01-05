@@ -11,24 +11,35 @@
 
 </body>
 <script>
-    const array1 = ['a', 'b', 'c'];
+    const array1 = [1, 2, 3];
+    array1[2]
     //   for(let i=0;i<array1.length;i++)
     //   {
     //     console.log(array1[i])
     //   }
     // function(arg1,arg2)
     // {}
-    array1.forEach(element => console.log(element));
+    // array1.forEach(element => console.log(element));
 
-    array1.forEach(function (element) {
-        console.log("element1", element)
-    });
+    // array1.forEach(function (element) {
+    //     console.log("element1", element)
+    // });
+   // const array3 = [1, 2, 3];
+   
 
-    array1.forEach(function (element, index, arr) {
-        console.log("element2", element)
-        console.log("index", index)
-        console.log("arr", arr)
-    });
+   array3.forEach(function (element, index, a) {
+       console.log("element2+", element+5)
+       console.log("index", index)
+       console.log("arr", a)
+   });
+// VM119:5 element2+ 6
+// VM119:6 index 0
+// VM119:7 arr (3) [1, 2, 3]
+// VM119:5 element2+ 7
+// VM119:6 index 1
+// VM119:7 arr (3) [1, 2, 3]
+// VM119:5 element2+ 8
+// VM119:6 index 2
 
 //     1. The returning value
 // The first difference between map() and forEach() is the returning value. The forEach() method returns undefined and map() returns a new array with the transformed elements. Even if they do the same job, the returning value remains different.
