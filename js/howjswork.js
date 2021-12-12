@@ -1,4 +1,15 @@
-console.log(a);//undefied
+// console.log(a);//undefied
+//  //Assign 5 to x
+//  var a =4;
+// console.log(a);
+// b()
+// function b() {
+//    var a=6;
+//     console.log(" b",a);//c in b , undefied
+// }
+// b();
+
+
 var a = 1;
 console.log(a); //1
 b()
@@ -7,13 +18,13 @@ function b() {
     var c = 1;
     console.log("c in b",c); //c in b , 1
 
-    console.log("a in b",a);
+    console.log("a in b",a); //a in b , 10
    var a=10;
     console.log("a in b",a);// a in b , 10 
 
     function x() {
         console.log("c in x",c);//undefied
-        console.log("c in x",a);//undefied
+        console.log("c in x",a);
         var c = 1;
         console.log("c in x",c);//1
     }
@@ -63,4 +74,5 @@ function b() {
 //     }
 //     x();
 // }
+
 
